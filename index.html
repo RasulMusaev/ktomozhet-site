@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Найти исполнителя в Москве бесплатно | Кто может? Москва</title>
+<meta name="description" content="Нужен фотограф, монтажёр, репетитор, мастер или артисты на праздник в Москве? Опишите задачу в Telegram-боте, исполнители напишут вам сами. Бесплатно, без комиссии, контакт напрямую.">
+<link rel="canonical" href="https://ktomozhet-msk.ru/">
+<meta name="robots" content="index, follow">
+<!-- Яндекс Вебмастер: сюда вставить мета-тег подтверждения, когда он будет -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Кто может? Москва: найти исполнителя бесплатно">
+<meta property="og:description" content="Опишите задачу в Telegram, исполнители напишут сами. Фото, видео, дизайн, репетиторы, ремонт, мероприятия. Без комиссии.">
+<meta property="og:url" content="https://ktomozhet-msk.ru/">
+<meta property="og:site_name" content="Кто может? Москва">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f6f78'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' font-family='Arial' font-weight='700' fill='%23fff'%3E%3F%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Кто может? Москва",
+  "url": "https://ktomozhet-msk.ru/",
+  "description": "Доска разовых задач в Москве и области: заказчик описывает задачу, исполнители пишут напрямую. Бесплатно, без комиссии.",
+  "inLanguage": "ru-RU",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Кто может? Москва",
+    "url": "https://t.me/ktomozhet_msk",
+    "sameAs": ["https://t.me/ktomozhet_msk", "https://t.me/ktomozhet_bot"]
+  }
+}
+</script>
+<style>
+  :root {
+    --bg: #f6f3ec;
+    --card: #ffffff;
+    --ink: #1d2328;
+    --muted: #5d6670;
+    --line: #e4ded2;
+    --accent: #1f6f78;
+    --accent-ink: #ffffff;
+    --accent-soft: #dcecee;
+    --warm: #e9b857;
+    --radius: 18px;
+    --max: 1040px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--ink);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+  header.top {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 0; gap: 16px;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand .mark {
+    width: 34px; height: 34px; border-radius: 10px; background: var(--accent); color: #fff;
+    display: inline-flex; align-items: center; justify-content: center; font-weight: 800; font-size: 20px;
+  }
+  nav.menu { display: flex; gap: 18px; font-size: 15px; }
+  nav.menu a { color: var(--muted); text-decoration: none; }
+  nav.menu a:hover { color: var(--ink); }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 14px 22px; border-radius: 999px; font-weight: 700; text-decoration: none;
+    font-size: 17px; line-height: 1; border: 2px solid transparent; cursor: pointer;
+  }
+  .btn.primary { background: var(--accent); color: var(--accent-ink); }
+  .btn.primary:hover { background: #185a62; }
+  .btn.ghost { background: transparent; color: var(--accent); border-color: var(--accent); }
+  .btn.ghost:hover { background: var(--accent-soft); }
+  .btn.small { padding: 10px 16px; font-size: 15px; }
+
+  .hero { padding: 36px 0 28px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 36px; align-items: center; }
+  .hero h1 { font-size: clamp(30px, 4.6vw, 46px); line-height: 1.12; margin: 0 0 16px; letter-spacing: -0.02em; }
+  .hero h1 em { font-style: normal; color: var(--accent); }
+  .hero p.lead { font-size: 19px; color: var(--muted); margin: 0 0 24px; max-width: 34em; }
+  .hero .cta { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .hero .note { font-size: 14px; color: var(--muted); margin-top: 12px; }
+  .hero .cardstack { position: relative; min-height: 360px; }
+  .task {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 16px 18px; box-shadow: 0 10px 30px rgba(31, 40, 50, .08); width: 88%;
+    position: absolute; font-size: 15px;
+  }
+  .task .tag { display: inline-block; font-size: 12px; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: 3px 9px; border-radius: 999px; margin-bottom: 8px; }
+  .task .t { font-weight: 700; margin-bottom: 6px; }
+  .task .m { color: var(--muted); font-size: 14px; }
+  .task .r { margin-top: 10px; font-size: 13px; color: #2d7a3a; font-weight: 700; }
+  .task.a { top: 0; left: 0; transform: rotate(-2deg); }
+  .task.b { top: 118px; right: 0; transform: rotate(1.5deg); }
+  .task.c { top: 236px; left: 6%; transform: rotate(-0.5deg); }
+
+  section { padding: 44px 0; }
+  section.alt { background: var(--card); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  h2 { font-size: clamp(24px, 3.2vw, 32px); margin: 0 0 8px; letter-spacing: -0.015em; }
+  .sub { color: var(--muted); margin: 0 0 26px; max-width: 40em; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .step { background: var(--bg); border-radius: var(--radius); padding: 20px; border: 1px solid var(--line); }
+  .step .n { width: 34px; height: 34px; border-radius: 50%; background: var(--warm); color: #3a2d05; display: inline-flex; align-items: center; justify-content: center; font-weight: 800; margin-bottom: 12px; }
+  .step h3 { margin: 0 0 6px; font-size: 18px; }
+  .step p { margin: 0; color: var(--muted); font-size: 15px; }
+  .cat { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; }
+  .cat .ico { font-size: 26px; margin-bottom: 8px; }
+  .cat h3 { margin: 0 0 6px; font-size: 17px; }
+  .cat p { margin: 0; font-size: 14px; color: var(--muted); }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 8px; }
+  .stat { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; text-align: center; }
+  .stat .v { font-size: 40px; font-weight: 800; color: var(--accent); letter-spacing: -0.03em; line-height: 1; }
+  .stat .l { color: var(--muted); font-size: 14px; margin-top: 8px; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
+  .box { background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; }
+  .box h3 { margin: 0 0 10px; }
+  .box ul { margin: 0; padding-left: 20px; color: var(--muted); font-size: 15px; }
+  .box li { margin-bottom: 6px; }
+  details { border-top: 1px solid var(--line); padding: 14px 0; }
+  details:last-of-type { border-bottom: 1px solid var(--line); }
+  summary { font-weight: 700; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; color: var(--accent); font-size: 22px; font-weight: 400; }
+  details[open] summary::after { content: "–"; }
+  details p { margin: 10px 0 0; color: var(--muted); }
+  .final { text-align: center; padding: 56px 0; }
+  .final h2 { margin-bottom: 10px; }
+  footer { padding: 26px 0 40px; color: var(--muted); font-size: 14px; }
+  footer .row { display: flex; flex-wrap: wrap; gap: 8px 22px; justify-content: space-between; align-items: center; }
+  footer a { color: var(--muted); }
+  .skip { position: absolute; left: -9999px; }
+  .skip:focus { position: static; }
+
+  @media (max-width: 860px) {
+    .hero { grid-template-columns: 1fr; gap: 26px; }
+    .hero .cardstack { min-height: 350px; order: 2; }
+    .grid3, .grid4, .two, .stats { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 560px) {
+    body { font-size: 16px; }
+    .wrap { padding: 0 16px; }
+    nav.menu { display: none; }
+    .grid3, .grid4, .two, .stats { grid-template-columns: 1fr; }
+    .task { width: 94%; }
+    .task.b { top: 136px; }
+    .task.c { top: 272px; }
+    .hero .cardstack { min-height: 400px; }
+    .btn { width: 100%; }
+    header.top .btn { width: auto; white-space: nowrap; font-size: 14px; padding: 9px 14px; }
+    .brand { font-size: 15px; white-space: nowrap; }
+    .brand .mark { width: 28px; height: 28px; font-size: 16px; border-radius: 8px; }
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15191d; --card: #1e2429; --ink: #eef1f3; --muted: #a2acb5; --line: #2c343b;
+      --accent: #5cc3cd; --accent-ink: #0d2a2e; --accent-soft: #1e3a3e; --warm: #d9a94a;
+    }
+    :root:not([data-theme="light"]) .task .r { color: #7bd389; }
+    :root:not([data-theme="light"]) .btn.primary:hover { background: #7fd3db; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">К содержанию</a>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#"><span class="mark">?</span> Кто может? Москва</a>
+    <nav class="menu" aria-label="Разделы">
+      <a href="#how">Как это работает</a>
+      <a href="#cats">Категории</a>
+      <a href="#exec">Исполнителям</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <a class="btn primary small" href="https://t.me/ktomozhet_bot">Описать задачу</a>
+  </header>
+</div>
+
+<main id="main">
+  <div class="wrap">
+    <section class="hero">
+      <div>
+        <h1>Нужен исполнитель в Москве? <em>Опишите задачу, исполнители напишут сами.</em></h1>
+        <p class="lead">Фотограф на мероприятие, монтажёр, репетитор, мастер по ремонту, артисты на праздник. Заявка публикуется бесплатно, контакт берут только исполнители, договариваетесь напрямую, без комиссии.</p>
+        <div class="cta">
+          <a class="btn primary" href="https://t.me/ktomozhet_bot">Описать задачу в Telegram</a>
+          <a class="btn ghost" href="https://t.me/ktomozhet_msk">Смотреть открытые заявки</a>
+        </div>
+        <p class="note">Москва и Московская область, а также удалённые задачи. Занимает две минуты.</p>
+      </div>
+      <div class="cardstack" aria-hidden="true">
+        <div class="task a"><span class="tag">Дизайн и digital</span><div class="t">Имиджевый ролик для бренда</div><div class="m">Удалённо · до 30 000 ₽</div><div class="r">8 исполнителей взяли контакт за сутки</div></div>
+        <div class="task b"><span class="tag">Обучение</span><div class="t">Репетитор латыни с нуля</div><div class="m">2 занятия в неделю · онлайн</div><div class="r">4 отклика в первый день</div></div>
+        <div class="task c"><span class="tag">Мероприятия</span><div class="t">Танцевальный коллектив на корпоратив</div><div class="m">Москва · 1 декабря · welcome и номер</div><div class="r">Откликнулись в первый час</div></div>
+      </div>
+    </section>
+  </div>
+
+  <section class="alt" id="how">
+    <div class="wrap">
+      <h2>Как это работает</h2>
+      <p class="sub">Никаких анкет и посредников: вы описываете задачу, мы её проверяем и показываем исполнителям, дальше вы общаетесь напрямую.</p>
+      <div class="grid3">
+        <div class="step"><div class="n">1</div><h3>Опишите задачу</h3><p>В боте @ktomozhet_bot: что нужно, где, когда и какой бюджет. Можно приложить фото-референсы. Две минуты.</p></div>
+        <div class="step"><div class="n">2</div><h3>Заявку проверяет человек</h3><p>Отсеиваем спам и мошенников, публикуем в канале и отправляем исполнителям, подписанным на вашу категорию.</p></div>
+        <div class="step"><div class="n">3</div><h3>Исполнители пишут вам</h3><p>Контакт получают только исполнители, по кнопке под заявкой. Цену, сроки и детали обсуждаете напрямую. Когда нашли, заявку закрываем.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cats">
+    <div class="wrap">
+      <h2>Какие задачи размещают</h2>
+      <p class="sub">Разовые задачи от частных заказчиков и небольшого бизнеса. Не вакансии и не массовый набор персонала.</p>
+      <div class="grid4">
+        <div class="cat"><div class="ico">📷</div><h3>Фото и видео</h3><p>Фотограф на мероприятие, видеограф на юбилей, съёмка для каталога.</p></div>
+        <div class="cat"><div class="ico">🎨</div><h3>Дизайн и digital</h3><p>Логотип и фирменный стиль, монтаж, 3D-модель, ролики и картинки нейросетью, сайт.</p></div>
+        <div class="cat"><div class="ico">🎪</div><h3>Мероприятия</h3><p>Ведущий, артисты, музыканты, диджей, световик, звукорежиссёр, бар и кейтеринг.</p></div>
+        <div class="cat"><div class="ico">📚</div><h3>Обучение</h3><p>Репетитор для ребёнка или для себя, мастер-класс, тренер.</p></div>
+        <div class="cat"><div class="ico">🔧</div><h3>Ремонт и мастера</h3><p>Электрик, сантехник, сборка мебели, мелкий ремонт.</p></div>
+        <div class="cat"><div class="ico">🤝</div><h3>Повседневная помощь</h3><p>Уборка, помощь по дому, курьер, бытовые поручения.</p></div>
+        <div class="cat"><div class="ico">🧠</div><h3>Консультации</h3><p>Психолог, семейный терапевт, юрист, бухгалтер.</p></div>
+        <div class="cat"><div class="ico">✨</div><h3>Другое</h3><p>Если задача разовая и понятная, её можно разместить. Если сомневаетесь, напишите нам.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>Цифры на сегодня</h2>
+      <p class="sub">Канал открылся в октябре 2026 года и растёт за счёт профессиональных сообществ Москвы.</p>
+      <div class="stats">
+        <div class="stat"><div class="v">150+</div><div class="l">исполнителей в канале</div></div>
+        <div class="stat"><div class="v">60+</div><div class="l">заявок размещено</div></div>
+        <div class="stat"><div class="v">84 %</div><div class="l">заказчиков, ответивших нам, нашли исполнителя</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="exec">
+    <div class="wrap">
+      <h2>Исполнителям</h2>
+      <p class="sub">Заказы без комиссии и без оплаты за контакт. Подпишитесь и выберите свои категории, новые заявки будут приходить сами.</p>
+      <div class="two">
+        <div class="box">
+          <h3>Как получать заказы</h3>
+          <ul>
+            <li>Подпишитесь на канал <a href="https://t.me/ktomozhet_msk">@ktomozhet_msk</a>: там все открытые заявки.</li>
+            <li>В боте <a href="https://t.me/ktomozhet_bot">@ktomozhet_bot</a> отправьте <strong>/categories</strong> и отметьте свои направления. Каждая новая заявка в них придёт вам в бот.</li>
+            <li>Под заявкой нажмите «Получить контакт заказчика» и напишите ему напрямую.</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>Правила простые</h3>
+          <ul>
+            <li>Без комиссии и без оплаты за заявки.</li>
+            <li>Контакт выдаёт бот, чтобы заказчику не писали случайные люди.</li>
+            <li>Через три дня бот спросит, договорились ли вы: это помогает нам понимать, какие заявки работают.</li>
+            <li>Хамство заказчикам и спам: блокировка.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="faq">
+    <div class="wrap">
+      <h2>Частые вопросы</h2>
+      <details open>
+        <summary>Это бесплатно?</summary>
+        <p>Да. Заказчики размещают задачи бесплатно, исполнители получают контакты бесплатно. Работу исполнителя вы оплачиваете ему напрямую, мы в расчётах не участвуем.</p>
+      </details>
+      <details>
+        <summary>Вы гарантируете результат?</summary>
+        <p>Нет, мы не агентство и не посредник. Мы проверяем заявки, отсеиваем мошенников и показываем задачу исполнителям, а выбор и договорённости остаются за вами. Если исполнитель повёл себя некорректно, напишите нам, мы заблокируем его.</p>
+      </details>
+      <details>
+        <summary>Как быстро откликнутся?</summary>
+        <p>Обычно первые отклики приходят в течение нескольких часов, в популярных категориях быстрее. Задачи «нужно сегодня» мы не размещаем: за несколько часов найти исполнителя честно не получится.</p>
+      </details>
+      <details>
+        <summary>Нужно ли указывать бюджет?</summary>
+        <p>Желательно, хотя бы ориентир. Заявки с бюджетом получают заметно больше откликов, а исполнители сразу понимают, подходит ли им задача.</p>
+      </details>
+      <details>
+        <summary>Я не в Москве, можно?</summary>
+        <p>Канал про Москву и область. Удалённые задачи (дизайн, монтаж, репетитор онлайн) размещаем независимо от города заказчика.</p>
+      </details>
+      <details>
+        <summary>Как закрыть заявку, если нашли исполнителя?</summary>
+        <p>Напишите нам или ответьте боту на вопрос «нашли исполнителя?», который придёт через три дня. Заявку закроем, и вам перестанут писать.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <h2>Опишите задачу, остальное сделаем</h2>
+      <p class="sub" style="margin-left:auto;margin-right:auto">Две минуты на заявку. Исполнители напишут вам сами.</p>
+      <a class="btn primary" href="https://t.me/ktomozhet_bot">Описать задачу в Telegram</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <div>© 2026 Кто может? Москва. Канал не является агентством и не берёт комиссию.</div>
+      <div><a href="https://t.me/ktomozhet_msk">Канал</a> · <a href="https://t.me/ktomozhet_bot">Бот</a> · Вопросы: <a href="https://t.me/jason_koon">@jason_koon</a></div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
